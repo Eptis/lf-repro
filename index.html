@@ -41,10 +41,10 @@
     App.AdsModalComponent = Ember.Component.extend({
         template: Ember.Handlebars.compile("<h2 {{action 'dismissModal'}}>Dismiss</h2>"),
         actions: {
-            dismissModal: function({
-                    this.sendAction("dismiss")
-                })
+            dismissModal: function(){
+                this.sendAction("dismiss")
             }
+        }
     });
 
 </script>
