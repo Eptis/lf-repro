@@ -25,7 +25,7 @@
 
     App.Router.map(function() {
       // put your routes here
-      this.resource("ads", {path: "/ads"}, function(){
+      this.resource("ads", function(){
         this.modal("ads-modal", {withParams: "showModal"})
       })
     });
